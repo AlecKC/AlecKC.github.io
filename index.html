@@ -6,5 +6,9 @@
 </section>
 
 <script>
-var name = ko.observable('Alec');
+	function ViewModel() {
+		var self = this;
+		self.name = ko.observable('Alec');
+	}
+	ko.applyBindings(new ViewModel());
 </script>
