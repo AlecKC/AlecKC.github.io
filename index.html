@@ -10,7 +10,7 @@
 		var self = this;
 		self.name = ko.observable('Alec');
 		self.swap = function () {
-			if (name() == 'Alec')
+			if (self.name() == 'Alec')
 				self.name('Noel');
 			else
 				self.name('Alec');
