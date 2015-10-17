@@ -2,7 +2,7 @@
 
 <section>
 <span data-bind="text: name"></span>
-<button data-bind="click: swap"/>
+<button data-bind="click: swap">Click Me!</button>
 </section>
 
 <script>
@@ -11,9 +11,9 @@
 		self.name = ko.observable('Alec');
 		self.swap = function () {
 			if (name() == 'Alec')
-				name('Noel');
+				self.name('Noel');
 			else
-				name('Alec');
+				self.name('Alec');
 		}
 	}
 	ko.applyBindings(new ViewModel());
