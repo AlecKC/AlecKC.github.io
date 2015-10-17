@@ -1,7 +1,7 @@
 <script type='text/javascript' src='knockout-3.3.0.js'></script>
 
-<section>
-<span data-bind="text: name"></span>
+<section style="background-color: black">
+<span data-bind="text: name" styld="font-color: white"></span>
 <button data-bind="click: swap">Click Me!</button>
 </section>
 
@@ -11,7 +11,7 @@
 		self.name = ko.observable('Alec');
 		self.swap = function () {
 			if (self.name() == 'Alec')
-				self.name('Noel');
+				self.name('SAM');
 			else
 				self.name('Alec');
 		}
